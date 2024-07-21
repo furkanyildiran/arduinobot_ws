@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target simple_serial_transmitter[0m
+[0.065s] [ 50%] Built target ament_cmake_python_copy_arduinobot_firmware
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o[0m
+[0.296s] running egg_info
+[0.297s] writing arduinobot_firmware.egg-info/PKG-INFO
+[0.297s] writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt
+[0.297s] writing top-level names to arduinobot_firmware.egg-info/top_level.txt
+[0.299s] reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.300s] writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.330s] [ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg
+[2.171s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:[m[K In constructor ‘[01m[KSimpleSerialTransmitter::SimpleSerialTransmitter()[m[K’:
+[2.171s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:15:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcreate_subscription[m[K’
+[2.171s]    15 |                 sub_ [01;31m[Kcreate_subscription[m[K<std_msgs::msg::String>("serial_transmitter",10,std::bind(&SimpleSerialTransmitter::msgCallback, this, _1));
+[2.171s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.171s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:15:17:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[2.171s]    15 |                 [01;35m[Ksub_[m[K create_subscription<std_msgs::msg::String>("serial_transmitter",10,std::bind(&SimpleSerialTransmitter::msgCallback, this, _1));
+[2.171s]       |                 [01;35m[K^~~~[m[K
+[2.583s] gmake[2]: *** [CMakeFiles/simple_serial_transmitter.dir/build.make:76: CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o] Error 1
+[2.584s] gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_serial_transmitter.dir/all] Error 2
+[2.585s] gmake: *** [Makefile:146: all] Error 2
+[2.586s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3

@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.000586] (arduinobot_firmware) JobQueued: {'identifier': 'arduinobot_firmware', 'dependencies': OrderedDict()}
+[0.000615] (arduinobot_firmware) JobStarted: {'identifier': 'arduinobot_firmware'}
+[0.006492] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'cmake'}
+[0.007174] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'build'}
+[0.008084] (arduinobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/monster/arduinobot_ws/build/arduinobot_firmware', '--', '-j3', '-l3'], 'cwd': '/home/monster/arduinobot_ws/build/arduinobot_firmware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'monster'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monster'), ('OLDPWD', '/home/monster/arduinobot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monster'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monster'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/monster-VM:@/tmp/.ICE-unix/940,unix/monster-VM:/tmp/.ICE-unix/940'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0cdcf998_c8b4_443c_9056_f5881262128a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G5XSQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monster/arduinobot_ws/build/arduinobot_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.048754] (arduinobot_firmware) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simple_serial_transmitter\x1b[0m\n'}
+[0.064194] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o\x1b[0m\n'}
+[0.064468] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_arduinobot_firmware\n'}
+[0.099908] (-) TimerEvent: {}
+[0.200643] (-) TimerEvent: {}
+[0.285101] (arduinobot_firmware) StdoutLine: {'line': b'running egg_info\n'}
+[0.285810] (arduinobot_firmware) StdoutLine: {'line': b'writing arduinobot_firmware.egg-info/PKG-INFO\n'}
+[0.286049] (arduinobot_firmware) StdoutLine: {'line': b'writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt\n'}
+[0.286338] (arduinobot_firmware) StdoutLine: {'line': b'writing top-level names to arduinobot_firmware.egg-info/top_level.txt\n'}
+[0.288197] (arduinobot_firmware) StdoutLine: {'line': b"reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'\n"}
+[0.288700] (arduinobot_firmware) StdoutLine: {'line': b"writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'\n"}
+[0.300984] (-) TimerEvent: {}
+[0.316313] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg\n'}
+[0.402527] (-) TimerEvent: {}
+[0.503055] (-) TimerEvent: {}
+[0.603585] (-) TimerEvent: {}
+[0.705081] (-) TimerEvent: {}
+[0.806588] (-) TimerEvent: {}
+[0.908037] (-) TimerEvent: {}
+[1.008659] (-) TimerEvent: {}
+[1.110154] (-) TimerEvent: {}
+[1.210635] (-) TimerEvent: {}
+[1.312712] (-) TimerEvent: {}
+[1.414213] (-) TimerEvent: {}
+[1.514752] (-) TimerEvent: {}
+[1.616269] (-) TimerEvent: {}
+[1.718281] (-) TimerEvent: {}
+[1.819274] (-) TimerEvent: {}
+[1.920770] (-) TimerEvent: {}
+[2.022261] (-) TimerEvent: {}
+[2.122781] (-) TimerEvent: {}
+[2.127679] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.127863] (arduinobot_firmware) StderrLine: {'line': b'   26 |         void msgCallback(const \x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String &msg)\n'}
+[2.127931] (arduinobot_firmware) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.127985] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.128037] (arduinobot_firmware) StderrLine: {'line': b'   26 |         void msgCallback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KString &msg)\n'}
+[2.128086] (arduinobot_firmware) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.128135] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.128190] (arduinobot_firmware) StderrLine: {'line': b'   26 |         void msgCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KString &msg)\n'}
+[2.128240] (arduinobot_firmware) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.128288] (arduinobot_firmware) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.128336] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.128385] (arduinobot_firmware) StderrLine: {'line': b'   26 |         void msgCallback(const std_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::String &msg)\n'}
+[2.128434] (arduinobot_firmware) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.128499] (arduinobot_firmware) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.129402] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.129507] (arduinobot_firmware) StderrLine: {'line': b'   26 |         void msgCallback(const std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K &msg)\n'}
+[2.129566] (arduinobot_firmware) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.134140] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.134231] (arduinobot_firmware) StderrLine: {'line': b'   33 |         rclcpp::Subscription<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr sub_;\n'}
+[2.134288] (arduinobot_firmware) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.134358] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.134417] (arduinobot_firmware) StderrLine: {'line': b'   33 |         rclcpp::Subscription<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr sub_;\n'}
+[2.134466] (arduinobot_firmware) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.134514] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[2.134562] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[2.134620] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[2.134670] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.134723] (arduinobot_firmware) StderrLine: {'line': b'   33 |         rclcpp::Subscription<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_;\n'}
+[2.134772] (arduinobot_firmware) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.134824] (arduinobot_firmware) StderrLine: {'line': b'      |                                                               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.135221] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.135315] (arduinobot_firmware) StderrLine: {'line': b'   33 |         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Ksub_\x1b[m\x1b[K;\n'}
+[2.135412] (arduinobot_firmware) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.140264] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSimpleSerialTransmitter::SimpleSerialTransmitter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.140426] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:15:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.140487] (arduinobot_firmware) StderrLine: {'line': b'   15 |                 \x1b[01;31m\x1b[Ksub_\x1b[m\x1b[K create_subscription<std_msgs::msg::String>("serial_transmitter",10,std::bind(&SimpleSerialTransmitter::msgCallback, this, _1));\n'}
+[2.140541] (arduinobot_firmware) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.140670] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:18:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Karduino_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.140728] (arduinobot_firmware) StderrLine: {'line': b'   18 |                 \x1b[01;31m\x1b[Karduino_\x1b[m\x1b[K.SetBaudRate(LibSerial::BaudRate::BAUD_115200);\n'}
+[2.140779] (arduinobot_firmware) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.140828] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual SimpleSerialTransmitter::~SimpleSerialTransmitter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.140877] (arduinobot_firmware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:23:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass LibSerial::SerialPort\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kclose\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KClose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.140927] (arduinobot_firmware) StderrLine: {'line': b'   23 |                 arduino_.\x1b[01;31m\x1b[Kclose\x1b[m\x1b[K();\n'}
+[2.140974] (arduinobot_firmware) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.141021] (arduinobot_firmware) StderrLine: {'line': b'      |                          \x1b[32m\x1b[KClose\x1b[m\x1b[K\n'}
+[2.225264] (-) TimerEvent: {}
+[2.325662] (-) TimerEvent: {}
+[2.427015] (-) TimerEvent: {}
+[2.528079] (-) TimerEvent: {}
+[2.557383] (arduinobot_firmware) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simple_serial_transmitter.dir/build.make:76: CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o] Error 1\n'}
+[2.557875] (arduinobot_firmware) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_serial_transmitter.dir/all] Error 2\n'}
+[2.558107] (arduinobot_firmware) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.560014] (arduinobot_firmware) CommandEnded: {'returncode': 2}
+[2.593510] (arduinobot_firmware) JobEnded: {'identifier': 'arduinobot_firmware', 'rc': 2}
+[2.594371] (-) EventReactorShutdown: {}

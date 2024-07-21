@@ -1,0 +1,15 @@
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/ament_index/resource_index/package_run_dependencies/aruinobot_description
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/ament_index/resource_index/parent_prefix_path/aruinobot_description
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/environment/ament_prefix_path.sh
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/environment/ament_prefix_path.dsv
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/environment/path.sh
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/environment/path.dsv
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/local_setup.bash
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/local_setup.sh
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/local_setup.zsh
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/local_setup.dsv
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/package.dsv
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/ament_index/resource_index/packages/aruinobot_description
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/cmake/aruinobot_descriptionConfig.cmake
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/cmake/aruinobot_descriptionConfig-version.cmake
+/home/monster/arduinobot_ws/src/install/aruinobot_description/share/aruinobot_description/package.xml

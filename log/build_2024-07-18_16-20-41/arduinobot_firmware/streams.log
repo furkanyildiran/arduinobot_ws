@@ -1,0 +1,56 @@
+[0.008s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_firmware
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.172s] -- Detecting C compiler ABI info - done
+[0.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.178s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.181s] -- Detecting CXX compiler ABI info
+[0.249s] -- Detecting CXX compiler ABI info - done
+[0.256s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.256s] -- Detecting CXX compile features
+[0.256s] -- Detecting CXX compile features - done
+[0.258s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.386s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.457s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[0.461s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.516s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.522s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.534s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.553s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.576s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.655s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.658s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.756s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.780s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.819s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.834s] -- Looking for pthread.h
+[0.910s] -- Looking for pthread.h - found
+[0.911s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.975s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.976s] -- Found Threads: TRUE  
+[1.147s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.147s] -- Checking for module 'libserial'
+[1.158s] --   Found libserial, version 1.0.0
+[1.259s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.324s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.325s] -- Added test 'lint_cmake' to check CMake code style
+[1.325s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.326s] -- Added test 'xmllint' to check XML markup files
+[1.327s] -- Configuring done
+[1.329s] [31mCMake Error at CMakeLists.txt:20 (add_executable):
+[1.329s]   Cannot find source file:
+[1.329s] 
+[1.329s]     src/simple_serial_transmitter.cpp
+[1.329s] 
+[1.329s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.329s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.329s] 
+[1.329s] [0m
+[1.329s] [31mCMake Error at CMakeLists.txt:20 (add_executable):
+[1.329s]   No SOURCES given to target: simple_serial_transmitter
+[1.329s] 
+[1.330s] [0m
+[1.330s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.338s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_firmware

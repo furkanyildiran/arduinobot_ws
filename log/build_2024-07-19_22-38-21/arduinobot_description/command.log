@@ -1,0 +1,6 @@
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_description
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_description
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_description -- -j3 -l3
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_description -- -j3 -l3
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_description
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_description

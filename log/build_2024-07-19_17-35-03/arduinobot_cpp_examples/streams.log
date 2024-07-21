@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[0.081s] [ 50%] Built target simple_publisher
+[0.108s] [ 75%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[7.821s] [100%] [32m[1mLinking CXX executable simple_subscriber[0m
+[8.222s] [100%] Built target simple_subscriber
+[8.233s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[8.257s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples
+[8.264s] -- Install configuration: ""
+[8.265s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher
+[8.265s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples
+[8.265s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples
+[8.265s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh
+[8.265s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv
+[8.266s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh
+[8.266s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv
+[8.266s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash
+[8.266s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh
+[8.266s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh
+[8.266s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv
+[8.266s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv
+[8.267s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples
+[8.267s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake
+[8.267s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake
+[8.267s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml
+[8.272s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples

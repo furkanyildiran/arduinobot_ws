@@ -1,0 +1,19 @@
+[0.019s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[0.107s] [ 25%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[0.123s] [ 75%] Built target simple_publisher
+[2.432s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+[2.432s]    20 |         [01;31m[Krclcpp[m[K:.Subscription<std_msgs::msg::String>::SharedPtr sub_;
+[2.432s]       |         [01;31m[K^~~~~~[m[K
+[2.437s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:[m[K In constructor ‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’:
+[2.437s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:11:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+[2.437s]    11 |                 [01;31m[Ksub_[m[K = create_subscription<std_msgs::msg::String>("chatter", 10, std::bind(&SimpleSubscriber::msgCallback, this, _1));
+[2.437s]       |                 [01;31m[K^~~~[m[K
+[2.487s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.488s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:28:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+[2.488s]    28 |         rclcpp[01;31m[K.[m[Kshutdown();
+[2.488s]       |               [01;31m[K^[m[K
+[4.733s] gmake[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:76: CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] Error 1
+[4.734s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/simple_subscriber.dir/all] Error 2
+[4.734s] gmake: *** [Makefile:146: all] Error 2
+[4.738s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3

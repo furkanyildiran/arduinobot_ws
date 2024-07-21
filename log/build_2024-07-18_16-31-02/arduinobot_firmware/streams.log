@@ -1,0 +1,60 @@
+[0.009s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target simple_serial_transmitter[0m
+[0.064s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o[0m
+[0.064s] [ 50%] Built target ament_cmake_python_copy_arduinobot_firmware
+[0.285s] running egg_info
+[0.285s] writing arduinobot_firmware.egg-info/PKG-INFO
+[0.285s] writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt
+[0.286s] writing top-level names to arduinobot_firmware.egg-info/top_level.txt
+[0.288s] reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.288s] writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.316s] [ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg
+[2.127s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+[2.127s]    26 |         void msgCallback(const [01;31m[Kstd_msgs[m[K::msg::String &msg)
+[2.127s]       |                                [01;31m[K^~~~~~~~[m[K
+[2.127s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.127s]    26 |         void msgCallback(const std_msgs::msg[01;31m[K::[m[KString &msg)
+[2.127s]       |                                             [01;31m[K^~[m[K
+[2.128s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.128s]    26 |         void msgCallback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KString &msg)
+[2.128s]       |                         [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[2.128s]       |                                             [32m[K)[m[K
+[2.128s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.128s]    26 |         void msgCallback(const std_msgs::[01;31m[Kmsg[m[K::String &msg)
+[2.128s]       |                                          [01;31m[K^~~[m[K
+[2.128s]       |                                             [32m[K;[m[K
+[2.129s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:26:47:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[2.129s]    26 |         void msgCallback(const std_msgs::msg::[01;31m[KString[m[K &msg)
+[2.129s]       |                                               [01;31m[K^~~~~~[m[K
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[2.134s]    33 |         rclcpp::Subscription<[01;31m[Kstd_msgs[m[K::msg::String>::SharedPtr sub_;
+[2.134s]       |                              [01;31m[K^~~~~~~~[m[K
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.134s]    33 |         rclcpp::Subscription<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr sub_;
+[2.134s]       |                                                   [01;31m[K^[m[K
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.134s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.134s]    33 |         rclcpp::Subscription<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K sub_;
+[2.134s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[2.134s]       |                                                               [32m[K;[m[K
+[2.135s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:33:64:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ does not name a type
+[2.135s]    33 |         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr [01;31m[Ksub_[m[K;
+[2.135s]       |                                                                [01;31m[K^~~~[m[K
+[2.140s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:[m[K In constructor ‘[01m[KSimpleSerialTransmitter::SimpleSerialTransmitter()[m[K’:
+[2.140s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:15:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+[2.140s]    15 |                 [01;31m[Ksub_[m[K create_subscription<std_msgs::msg::String>("serial_transmitter",10,std::bind(&SimpleSerialTransmitter::msgCallback, this, _1));
+[2.140s]       |                 [01;31m[K^~~~[m[K
+[2.140s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:18:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Karduino_[m[K’
+[2.140s]    18 |                 [01;31m[Karduino_[m[K.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
+[2.140s]       |                 [01;31m[K^~~~~~~~[m[K
+[2.140s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:[m[K In destructor ‘[01m[Kvirtual SimpleSerialTransmitter::~SimpleSerialTransmitter()[m[K’:
+[2.140s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:23:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LibSerial::SerialPort[m[K’ has no member named ‘[01m[Kclose[m[K’; did you mean ‘[01m[KClose[m[K’?
+[2.140s]    23 |                 arduino_.[01;31m[Kclose[m[K();
+[2.140s]       |                          [01;31m[K^~~~~[m[K
+[2.140s]       |                          [32m[KClose[m[K
+[2.557s] gmake[2]: *** [CMakeFiles/simple_serial_transmitter.dir/build.make:76: CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o] Error 1
+[2.557s] gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_serial_transmitter.dir/all] Error 2
+[2.558s] gmake: *** [Makefile:146: all] Error 2
+[2.560s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3

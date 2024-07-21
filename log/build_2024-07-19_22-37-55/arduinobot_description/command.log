@@ -1,0 +1,2 @@
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_description': /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_description
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_description' returned '1': /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_description -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_description

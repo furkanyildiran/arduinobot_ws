@@ -1,0 +1,51 @@
+[0.019s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[0.048s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.204s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.238s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.251s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.260s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.273s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.292s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.385s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.387s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.532s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.715s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.822s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.824s] -- Configured cppcheck include dirs: 
+[0.825s] -- Configured cppcheck exclude dirs and/or files: 
+[0.825s] -- Added test 'lint_cmake' to check CMake code style
+[0.826s] -- Added test 'uncrustify' to check C / C++ code style
+[0.827s] -- Configured uncrustify additional arguments: 
+[0.827s] -- Added test 'xmllint' to check XML markup files
+[0.830s] -- Configuring done
+[0.851s] -- Generating done
+[0.853s] -- Build files have been written to: /home/monster/arduinobot_ws/build/arduinobot_cpp_examples
+[0.888s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[3.982s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.982s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_publisher.cpp:32:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.982s]    32 | int main([01;35m[Kint argc[m[K, char *argv[])
+[3.982s]       |          [01;35m[K~~~~^~~~[m[K
+[3.982s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_publisher.cpp:32:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.982s]    32 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+[3.983s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[4.424s] [100%] [32m[1mLinking CXX executable simple_publisher[0m
+[4.577s] [100%] Built target simple_publisher
+[4.589s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[4.619s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples
+[4.629s] -- Install configuration: ""
+[4.630s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples
+[4.630s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples
+[4.631s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh
+[4.631s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv
+[4.631s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh
+[4.632s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv
+[4.632s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash
+[4.633s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh
+[4.633s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh
+[4.633s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv
+[4.634s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv
+[4.634s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples
+[4.634s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake
+[4.635s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake
+[4.635s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml
+[4.639s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples

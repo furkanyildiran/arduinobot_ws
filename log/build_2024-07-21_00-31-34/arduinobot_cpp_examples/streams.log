@@ -1,0 +1,22 @@
+[0.019s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[0.100s] [ 16%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
+[0.107s] [ 50%] Built target simple_publisher
+[0.108s] [ 83%] Built target simple_subscriber
+[2.419s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In member function ‘[01m[Krcl_interfaces::msg::SetParametersResult SimpleParameter::paramChangeCallback(const std::vector<rclcpp::Parameter>&)[m[K’:
+[2.419s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:30:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SetParametersResult = struct rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccesful[m[K’; did you mean ‘[01m[Ksuccessful[m[K’?
+[2.419s]    30 |                                 result.[01;31m[Ksuccesful[m[K = true;
+[2.419s]       |                                        [01;31m[K^~~~~~~~~[m[K
+[2.419s]       |                                        [32m[Ksuccessful[m[K
+[2.419s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:35:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SetParametersResult = struct rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccesful[m[K’; did you mean ‘[01m[Ksuccessful[m[K’?
+[2.419s]    35 |                                 result.[01;31m[Ksuccesful[m[K = true;
+[2.420s]       |                                        [01;31m[K^~~~~~~~~[m[K
+[2.420s]       |                                        [32m[Ksuccessful[m[K
+[2.423s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.423s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:47:9:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Krclcpp[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-label-Wunused-label]8;;[m[K]
+[2.423s]    47 |         [01;35m[Krclcpp[m[K:spin(node);
+[2.423s]       |         [01;35m[K^~~~~~[m[K
+[2.896s] gmake[2]: *** [CMakeFiles/simple_parameter.dir/build.make:76: CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o] Error 1
+[2.897s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/simple_parameter.dir/all] Error 2
+[2.897s] gmake: *** [Makefile:146: all] Error 2
+[2.899s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3

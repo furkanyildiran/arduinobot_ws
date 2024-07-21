@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[ 33%] Built target simple_publisher
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
+[ 83%] Built target simple_subscriber

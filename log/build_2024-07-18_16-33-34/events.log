@@ -1,0 +1,136 @@
+[0.000000] (-) TimerEvent: {}
+[0.000511] (arduinobot_firmware) JobQueued: {'identifier': 'arduinobot_firmware', 'dependencies': OrderedDict()}
+[0.000551] (arduinobot_firmware) JobStarted: {'identifier': 'arduinobot_firmware'}
+[0.006616] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'cmake'}
+[0.006867] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'build'}
+[0.007515] (arduinobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/monster/arduinobot_ws/build/arduinobot_firmware', '--', '-j3', '-l3'], 'cwd': '/home/monster/arduinobot_ws/build/arduinobot_firmware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'monster'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monster'), ('OLDPWD', '/home/monster/arduinobot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monster'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monster'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/monster-VM:@/tmp/.ICE-unix/940,unix/monster-VM:/tmp/.ICE-unix/940'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0cdcf998_c8b4_443c_9056_f5881262128a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G5XSQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monster/arduinobot_ws/build/arduinobot_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.056705] (arduinobot_firmware) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simple_serial_transmitter\x1b[0m\n'}
+[0.071893] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_arduinobot_firmware\n'}
+[0.072081] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o\x1b[0m\n'}
+[0.099795] (-) TimerEvent: {}
+[0.200097] (-) TimerEvent: {}
+[0.294629] (arduinobot_firmware) StdoutLine: {'line': b'running egg_info\n'}
+[0.295393] (arduinobot_firmware) StdoutLine: {'line': b'writing arduinobot_firmware.egg-info/PKG-INFO\n'}
+[0.295754] (arduinobot_firmware) StdoutLine: {'line': b'writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt\n'}
+[0.296002] (arduinobot_firmware) StdoutLine: {'line': b'writing top-level names to arduinobot_firmware.egg-info/top_level.txt\n'}
+[0.298039] (arduinobot_firmware) StdoutLine: {'line': b"reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'\n"}
+[0.298669] (arduinobot_firmware) StdoutLine: {'line': b"writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'\n"}
+[0.300191] (-) TimerEvent: {}
+[0.325847] (arduinobot_firmware) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg\n'}
+[0.400359] (-) TimerEvent: {}
+[0.500703] (-) TimerEvent: {}
+[0.600991] (-) TimerEvent: {}
+[0.701319] (-) TimerEvent: {}
+[0.801671] (-) TimerEvent: {}
+[0.902013] (-) TimerEvent: {}
+[1.002374] (-) TimerEvent: {}
+[1.102721] (-) TimerEvent: {}
+[1.203062] (-) TimerEvent: {}
+[1.303394] (-) TimerEvent: {}
+[1.403742] (-) TimerEvent: {}
+[1.504041] (-) TimerEvent: {}
+[1.604347] (-) TimerEvent: {}
+[1.704692] (-) TimerEvent: {}
+[1.805002] (-) TimerEvent: {}
+[1.905356] (-) TimerEvent: {}
+[2.005699] (-) TimerEvent: {}
+[2.105999] (-) TimerEvent: {}
+[2.206431] (-) TimerEvent: {}
+[2.306835] (-) TimerEvent: {}
+[2.407206] (-) TimerEvent: {}
+[2.507534] (-) TimerEvent: {}
+[2.607868] (-) TimerEvent: {}
+[2.708204] (-) TimerEvent: {}
+[2.808528] (-) TimerEvent: {}
+[2.908858] (-) TimerEvent: {}
+[3.009223] (-) TimerEvent: {}
+[3.109578] (-) TimerEvent: {}
+[3.209895] (-) TimerEvent: {}
+[3.310238] (-) TimerEvent: {}
+[3.410680] (-) TimerEvent: {}
+[3.511142] (-) TimerEvent: {}
+[3.611471] (-) TimerEvent: {}
+[3.711819] (-) TimerEvent: {}
+[3.812789] (-) TimerEvent: {}
+[3.913127] (-) TimerEvent: {}
+[4.013528] (-) TimerEvent: {}
+[4.113871] (-) TimerEvent: {}
+[4.214206] (-) TimerEvent: {}
+[4.314578] (-) TimerEvent: {}
+[4.415126] (-) TimerEvent: {}
+[4.515464] (-) TimerEvent: {}
+[4.615795] (-) TimerEvent: {}
+[4.716178] (-) TimerEvent: {}
+[4.816651] (-) TimerEvent: {}
+[4.916986] (-) TimerEvent: {}
+[5.017283] (-) TimerEvent: {}
+[5.117580] (-) TimerEvent: {}
+[5.217895] (-) TimerEvent: {}
+[5.318228] (-) TimerEvent: {}
+[5.419190] (-) TimerEvent: {}
+[5.519517] (-) TimerEvent: {}
+[5.619863] (-) TimerEvent: {}
+[5.720189] (-) TimerEvent: {}
+[5.820481] (-) TimerEvent: {}
+[5.920819] (-) TimerEvent: {}
+[6.021148] (-) TimerEvent: {}
+[6.121475] (-) TimerEvent: {}
+[6.221806] (-) TimerEvent: {}
+[6.322100] (-) TimerEvent: {}
+[6.422348] (-) TimerEvent: {}
+[6.523070] (-) TimerEvent: {}
+[6.623373] (-) TimerEvent: {}
+[6.723709] (-) TimerEvent: {}
+[6.824037] (-) TimerEvent: {}
+[6.924310] (-) TimerEvent: {}
+[7.024647] (-) TimerEvent: {}
+[7.124956] (-) TimerEvent: {}
+[7.225499] (-) TimerEvent: {}
+[7.327019] (-) TimerEvent: {}
+[7.428491] (-) TimerEvent: {}
+[7.530037] (-) TimerEvent: {}
+[7.554619] (arduinobot_firmware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple_serial_transmitter\x1b[0m\n'}
+[7.630371] (-) TimerEvent: {}
+[7.731824] (-) TimerEvent: {}
+[7.833479] (-) TimerEvent: {}
+[7.934003] (-) TimerEvent: {}
+[7.942458] (arduinobot_firmware) StdoutLine: {'line': b'[100%] Built target simple_serial_transmitter\n'}
+[7.952592] (arduinobot_firmware) CommandEnded: {'returncode': 0}
+[7.979980] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'install'}
+[7.988991] (arduinobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/monster/arduinobot_ws/build/arduinobot_firmware'], 'cwd': '/home/monster/arduinobot_ws/build/arduinobot_firmware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'monster'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monster'), ('OLDPWD', '/home/monster/arduinobot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('SYSTEMD_EXEC_PID', '970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monster'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monster'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/monster-VM:@/tmp/.ICE-unix/940,unix/monster-VM:/tmp/.ICE-unix/940'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0cdcf998_c8b4_443c_9056_f5881262128a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G5XSQ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monster/arduinobot_ws/build/arduinobot_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.996354] (arduinobot_firmware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.996541] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.sh\n'}
+[7.996746] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.dsv\n'}
+[7.997019] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info\n'}
+[7.997209] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.997375] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.997531] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.997658] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.997748] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware\n'}
+[7.997842] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/__init__.py\n'}
+[7.997902] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/simple_serial_transmitter.py\n'}
+[8.034183] (-) TimerEvent: {}
+[8.035165] (arduinobot_firmware) StdoutLine: {'line': b"Listing '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware'...\n"}
+[8.035353] (arduinobot_firmware) StdoutLine: {'line': b"Compiling '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/__init__.py'...\n"}
+[8.035426] (arduinobot_firmware) StdoutLine: {'line': b"Compiling '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/simple_serial_transmitter.py'...\n"}
+[8.039261] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter\n'}
+[8.042583] (arduinobot_firmware) StdoutLine: {'line': b'-- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter" to ""\n'}
+[8.042837] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter.py\n'}
+[8.043023] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/package_run_dependencies/arduinobot_firmware\n'}
+[8.043107] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/parent_prefix_path/arduinobot_firmware\n'}
+[8.043236] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.sh\n'}
+[8.043415] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.dsv\n'}
+[8.043668] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.sh\n'}
+[8.043844] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.dsv\n'}
+[8.044188] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.bash\n'}
+[8.044916] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.sh\n'}
+[8.045124] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.zsh\n'}
+[8.045465] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.dsv\n'}
+[8.045816] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.dsv\n'}
+[8.046318] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/packages/arduinobot_firmware\n'}
+[8.046576] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig.cmake\n'}
+[8.046876] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig-version.cmake\n'}
+[8.047225] (arduinobot_firmware) StdoutLine: {'line': b'-- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.xml\n'}
+[8.050656] (arduinobot_firmware) CommandEnded: {'returncode': 0}
+[8.090711] (arduinobot_firmware) JobEnded: {'identifier': 'arduinobot_firmware', 'rc': 0}
+[8.091374] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_firmware
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/monster/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/monster/arduinobot_ws/install/arduinobot_firmware

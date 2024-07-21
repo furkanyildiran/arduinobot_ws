@@ -1,0 +1,5 @@
+  File "/home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples/simple_parameter.py", line 14
+    	def paramChangeCallback(selfi params)
+    	                              ^^^^^^
+SyntaxError: invalid syntax
+

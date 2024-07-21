@@ -1,0 +1,4 @@
+source;share/aruinobot_description/local_setup.bash
+source;share/aruinobot_description/local_setup.dsv
+source;share/aruinobot_description/local_setup.sh
+source;share/aruinobot_description/local_setup.zsh

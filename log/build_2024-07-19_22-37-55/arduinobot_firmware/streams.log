@@ -1,0 +1,11 @@
+[0.029s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3
+[0.183s] [ 50%] Built target ament_cmake_python_copy_arduinobot_firmware
+[0.183s] [100%] Built target simple_serial_transmitter
+[0.455s] running egg_info
+[0.456s] writing arduinobot_firmware.egg-info/PKG-INFO
+[0.456s] writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt
+[0.456s] writing top-level names to arduinobot_firmware.egg-info/top_level.txt
+[0.459s] reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.460s] writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.490s] [100%] Built target ament_cmake_python_build_arduinobot_firmware_egg
+[0.577s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '0': /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j3 -l3

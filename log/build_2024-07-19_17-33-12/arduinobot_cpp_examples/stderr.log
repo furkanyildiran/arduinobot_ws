@@ -1,0 +1,14 @@
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+   20 |         [01;31m[Krclcpp[m[K:.Subscription<std_msgs::msg::String>::SharedPtr sub_;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:[m[K In constructor ‘[01m[KSimpleSubscriber::SimpleSubscriber()[m[K’:
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:11:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+   11 |                 [01;31m[Ksub_[m[K = create_subscription<std_msgs::msg::String>("chatter", 10, std::bind(&SimpleSubscriber::msgCallback, this, _1));
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_subscriber.cpp:28:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+   28 |         rclcpp[01;31m[K.[m[Kshutdown();
+      |               [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:76: CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/simple_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
