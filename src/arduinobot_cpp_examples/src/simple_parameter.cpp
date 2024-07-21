@@ -24,14 +24,14 @@ private:
 		rcl_interfaces::msg::SetParametersResult result;
 		for(const auto& param : parameters)
 		{
-			if(param.get_name() == "simple_int_parameter" && param.get_type() == rclcpp::ParameterType::PARAMETER_INTEGER)
+			if((param.get_name() == "simple_int_param") && (param.get_type() == rclcpp::ParameterType::PARAMETER_INTEGER))
 			{
 				RCLCPP_INFO_STREAM(get_logger(), "Param simple_int_param changed! New value is: " << param.as_int());
 				result.successful = true;
 			}
-			if(param.get_name() == "simple_string_parameter" && param.get_type() == rclcpp::ParameterType::PARAMETER_STRING)
+			if((param.get_name() == "simple_string_param") && (param.get_type() == rclcpp::ParameterType::PARAMETER_STRING))
 			{
-				RCLCPP_INFO_STREAM(get_logger(), "Param simple_string_param changed! New value is: " << param.as_int());
+				RCLCPP_INFO_STREAM(get_logger(), "Param simple_string_param changed! New value is: " << param.as_string());
 				result.successful = true;
 			}
 		}

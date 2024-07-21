@@ -1,0 +1,13 @@
+[ 33%] Built target simple_subscriber
+[35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[ 66%] Built target simple_publisher
+[ 83%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In member function ‘[01m[Krcl_interfaces::msg::SetParametersResult SimpleParameter::paramChangeCallback(const std::vector<rclcpp::Parameter>&)[m[K’:
+[01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:39:31:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kresult.rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >::successful[m[K’ from ‘[01m[Krcl_interfaces::msg::SetParametersResult_<std::allocator<void> >::_successful_type[m[K’ {aka ‘[01m[Kbool[m[K’} to ‘[01m[Krcl_interfaces::msg::SetParametersResult[m[K’ {aka ‘[01m[Krcl_interfaces::msg::SetParametersResult_<std::allocator<void> >[m[K’}
+   39 |                 return [01;31m[Kresult.successful[m[K;
+      |                        [01;31m[K~~~~~~~^~~~~~~~~~[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[Krcl_interfaces::msg::SetParametersResult_<std::allocator<void> >::_successful_type {aka bool}[m[K
+gmake[2]: *** [CMakeFiles/simple_parameter.dir/build.make:76: CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/simple_parameter.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

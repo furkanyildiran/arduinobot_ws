@@ -1,0 +1,21 @@
+[0.021s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3
+[0.107s] [ 33%] Built target simple_publisher
+[0.116s] [ 66%] Built target simple_subscriber
+[0.133s] [ 83%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
+[2.733s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In constructor ‘[01m[KSimpleParameter::SimpleParameter()[m[K’:
+[2.733s] [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:16:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_Bind_helper<false, rcl_interfaces::msg::SetParametersResult_<std::allocator<void> > (SimpleParameter::*)(std::vector<rclcpp::Parameter>&), SimpleParameter*, const std::_Placeholder<1>&>::type[m[K’ to ‘[01m[Krclcpp::Node::OnParametersSetCallbackType[m[K’ {aka ‘[01m[Kstd::function<rcl_interfaces::msg::SetParametersResult_<std::allocator<void> >(const std::vector<rclcpp::Parameter>&)>[m[K’}
+[2.733s]    16 |                 param_callback_handle_ = add_on_set_parameters_callback([01;31m[Kstd::bind(&SimpleParameter::paramChangeCallback, this, _1)[m[K);
+[2.733s]       |                                                                         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.733s]       |                                                                                  [01;31m[K|[m[K
+[2.733s]       |                                                                                  [01;31m[Kstd::_Bind_helper<false, rcl_interfaces::msg::SetParametersResult_<std::allocator<void> > (SimpleParameter::*)(std::vector<rclcpp::Parameter>&), SimpleParameter*, const std::_Placeholder<1>&>::type[m[K
+[2.733s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.733s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.733s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.733s]                  from [01m[K/home/monster/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:1[m[K:
+[2.733s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:934:62:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::add_on_set_parameters_callback(rclcpp::Node::OnParametersSetCallbackType)[m[K’
+[2.733s]   934 |   add_on_set_parameters_callback([01;36m[KOnParametersSetCallbackType callback[m[K);
+[2.733s]       |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[3.181s] gmake[2]: *** [CMakeFiles/simple_parameter.dir/build.make:76: CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o] Error 1
+[3.182s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/simple_parameter.dir/all] Error 2
+[3.182s] gmake: *** [Makefile:146: all] Error 2
+[3.185s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monster/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j3 -l3

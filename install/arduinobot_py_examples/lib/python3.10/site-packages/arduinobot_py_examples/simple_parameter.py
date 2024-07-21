@@ -12,7 +12,7 @@ class SimpleParameter(Node):
 		self.add_on_set_parameters_callback(self.paramChangeCallback)
 		
 	def paramChangeCallback(self, params):
-		result = SetParameterResult()
+		result = SetParametersResult()
 		
 		for param in params:
 			if param.name == "simple_int_param" and param.type_ == Parameter.Type.INTEGER:
