@@ -1,8 +1,10 @@
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot.urdf.xacro
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/inertial_macros.xacro
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/robot_core.xacro
+/home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch/robot_description_publisher.launch.py
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch/display.launch.py
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/rviz/display.rviz
+/home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/rviz/robot_description_publisher.rviz
 /home/monster/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
 /home/monster/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
 /home/monster/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh

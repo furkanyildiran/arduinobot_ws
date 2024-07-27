@@ -1,1 +1,1 @@
-urdf;xacro;robot_state_publisher;joint_state_publisher_gui;rviz2;ros2launch;ament_lint_auto;ament_lint_common
+gz_sim_vendor;urdf;xacro;robot_state_publisher;joint_state_publisher_gui;rviz2;ros2launch;image_transport_plugins;ros_gz_bridge;ros_gz_sim;ros_gz_image;rqt_image_view;rqt_plot;rqt_topic;sdformat_urdf;ament_lint_auto;ament_lint_common
