@@ -1,0 +1,32 @@
+[0.020s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j6 -l6
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[0.098s] [ 33%] Built target simple_publisher
+[0.101s] [ 66%] Built target simple_subscriber
+[0.104s] [100%] Built target simple_parameter
+[0.373s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j6 -l6
+[0.425s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples
+[0.436s] -- Install configuration: ""
+[0.436s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher
+[0.437s] -- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher" to ""
+[0.437s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber
+[0.442s] -- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber" to ""
+[0.443s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_parameter
+[0.444s] -- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_parameter" to ""
+[0.444s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples
+[0.444s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples
+[0.444s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh
+[0.444s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv
+[0.445s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh
+[0.445s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv
+[0.445s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash
+[0.445s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh
+[0.445s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh
+[0.446s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv
+[0.446s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv
+[0.446s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples
+[0.446s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake
+[0.446s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake
+[0.446s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml
+[0.457s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples

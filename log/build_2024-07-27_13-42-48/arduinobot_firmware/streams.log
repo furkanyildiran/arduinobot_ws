@@ -1,0 +1,47 @@
+[0.021s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j6 -l6
+[0.099s] [  0%] Built target ament_cmake_python_copy_arduinobot_firmware
+[0.100s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o[0m
+[0.352s] running egg_info
+[0.353s] writing arduinobot_firmware.egg-info/PKG-INFO
+[0.353s] writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt
+[0.354s] writing top-level names to arduinobot_firmware.egg-info/top_level.txt
+[0.357s] reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.358s] writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.420s] [ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg
+[7.598s] [100%] [32m[1mLinking CXX executable simple_serial_transmitter[0m
+[7.941s] [100%] Built target simple_serial_transmitter
+[7.951s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j6 -l6
+[7.975s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_firmware
+[7.982s] -- Install configuration: ""
+[7.983s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.sh
+[7.983s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.dsv
+[7.983s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info
+[7.983s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.983s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/top_level.txt
+[7.983s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/PKG-INFO
+[7.983s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.984s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware
+[7.984s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/__init__.py
+[7.984s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/simple_serial_transmitter.py
+[8.013s] Listing '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware'...
+[8.013s] Compiling '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/__init__.py'...
+[8.013s] Compiling '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/simple_serial_transmitter.py'...
+[8.017s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter
+[8.020s] -- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter" to ""
+[8.020s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter.py
+[8.020s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/package_run_dependencies/arduinobot_firmware
+[8.020s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/parent_prefix_path/arduinobot_firmware
+[8.020s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.sh
+[8.020s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.dsv
+[8.020s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.sh
+[8.020s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.dsv
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.bash
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.sh
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.zsh
+[8.021s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.dsv
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.dsv
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/packages/arduinobot_firmware
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig.cmake
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig-version.cmake
+[8.021s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.xml
+[8.023s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_firmware
