@@ -1,0 +1,4 @@
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j6 -l6
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j6 -l6
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples
+Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_cpp_examples

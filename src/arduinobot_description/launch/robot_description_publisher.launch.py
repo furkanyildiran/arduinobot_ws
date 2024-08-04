@@ -80,15 +80,12 @@ def generate_launch_description():
         package="ros_gz_sim",
         executable="create",
         arguments=[
-            "-topic", "/robot_description",
-            "-name", "arduinobot_description",
-            "-allow_renaming", "true",
-            "-z", "0.28",
-            "-x", "0.0",
-            "-y", "0.0",
-            "-Y", "0.0"
-        ]
-    )
+                    '-name', 'my_custom_model',
+                    '-x', '1.2',
+                    '-z', '2.3',
+                    '-Y', '3.4',
+                    '-topic', '/robot_description'],
+                 output='screen')
 
     return LaunchDescription([
         gazebo,

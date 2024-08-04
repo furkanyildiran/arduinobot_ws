@@ -1,0 +1,239 @@
+1) arduinobot_ws/src/arduinobot_cpp_examplee/src altına simple_publisher.cpp oluşturuldu.
+2) CMakeList.txt dosyasında :
+
+	find_package(rclcpp REQUIRED)
+	find_package(std_msgs REQUIRED)
+	
+	add_executable(simple_publisher src/simple_publisher.cpp)
+	ament_target_dependencies(simple_publisher rclcpp std_msgs)
+	
+	install(TARGETS
+		simple_publisher
+		DESTINATION lib/${PROJECT_NAME}
+	)
+	
+3) package.xml dosyasına aşağıdakiler eklenir:
+	<depend>rclcpp</depend>
+   	<depend>std_msgs</depend>
+   	
+3) ros2 run ardinobot_cpp_examples simple_publisher ile çalıştırılır.
+4) ros2 topic echo /chatter ile topic gerçek zamanlı görüntülenir
+5) ros2 topic list
+6) ros2 topic info /chatter
+7) ros2 topic info /chatter --verbose
+
+SIMPLE PYTHON SUBSCRIBER
+
+1) arduinobot_ws/src/arduinobot_py_examples/arduinobot_py_examples altında simple_publisher.py adında dosya oluşturuldu.
+2) setup.py dosyasında console scripts bloğunun içine aşağıdaki saatır eklendi:
+	'simple_subscriber = arduinobot_py_examples.simple_subscriber:main',
+	
+3) ros2 run arduinobot_py_examples simple_subscriber komutu ile subscriber çalıştırılır.
+
+4) Başka bir terminalde ros2 topic list ile /chatter topicinin aktif olduğu görünür
+
+5) ros2 topic info /chatter --verbose ile subscription sayyacının 1 olduğu görülür:
+	Publisher count: 0
+	Subscription count: 1
+
+6) Şimdi bir publisher da çalıştırılacak:
+	ros2 topic pub /chatter std_msgs/msg/String "data: 'Merhaba ROS 2'"
+	
+7) Subscriberın çalıştrıldığı terminalde mesajın alındığı görülecektir.
+
+8) Ros2 nin başka bir özelliği farklı dillerde yazılmış nodeların birbirleriyle iletşim kurabilmesidir. Eğer aşağıdaki
+komut ile cpp ile yazılmış publisher çalıştırılırsa yine python ile yazılmış ilk terminalde çalıştırılan simple_subscriberın mesajı alabildiğini görebilirsiniz.
+
+	ros2 run arduinobot_cpp_examples simple_publisher	
+	
+8) Eğer cpp ya da python ile çalıştırılmış(hangi dilde oluğu farketmez) aşağıdaki komut ile
+	ros2 topic info /chatter --verbose
+hem subsription count: 1 hem de publisher count: 1 olduğu görülür.
+
+SIMPLE CPP SUBSCRIBER
+
+1) arduinobot_ws/src/arduinobot_cpp_examples/src altında simple_subscriber.cpp dosyası oluşturulur.
+
+2) CMakeList.txt dosyasına aşağıdaki satırlar eklenir:
+
+	add_executable(simple_subscriber src/simple_subscriber.cpp)
+	ament_target_dependencies(simple_subscriber rclcpp std_msgs)
+	
+   install bloğu arasına ise aşağıdaki satır eklenir:
+   
+   	simple_subscriber
+   	
+3) Geriye kalan tüm testler python ile yazılan subscription ile aynıdır.
+
+CREATE URDF Model
+
+1) ros2 pkg create --build-type ament_cmake arduinobot_description ile paket oluşturulur.
+
+2) colcon build ile workspace build deiliri
+
+3) arduinobot_ws/src/arduinobot_description/ altında urdf adında klasör oluşturulur
+
+4) arduinobot_ws/src/arduinobot_description/urdf içine arduinobot.urdf.xacro dosyası oluşturulur.
+
+5) arduinobot_ws/src/arduinobot_description/ altında meshes klasörü oluşturulur
+
+URDF oluşturma
+
+1) arduinobot_ws/src içinde ros2 pkg create --build-type ament_cmake arduinobot_description ile paket oluşturuldu
+
+2) arduinobot_ws/src/arduinobot_description içinde urdf klasörü oluşturuldu
+
+3) arduinobot_ws/src/arduinobot_description/urdf içine arduinobot.urdf.xacro dosyası oluşturuldu. xacro urdfnin uzatılmış halidir.
+
+4) CMakeList.txt dosyasında urdf klasörünü belirtmek için aşağıdaki satırlar eklenir:
+
+	install(
+  		DIRECTORY urdf
+  		DESTINATION share/${PROJECT_NAME}
+	)
+Eğer birden fazla klasör olsaydı örneğind urdf, meshes gibi
+
+	install(
+  		DIRECTORY urdf meshes 
+  		DESTINATION share/${PROJECT_NAME}
+	)
+	
+şeklinde olurdu.
+
+5) Çalıştırmak için sudo apt-get install ros-humble-urdf-tutorial indirildi.
+
+6)Aşağıdaki komut ile rviz de çalıştırıldı:
+
+ros2 launch urdf_tutorial display.launch.py model:=/home/monster/arduinobot_ws/src/arduinobot_description/urdf/arduinobot.urdf.xacro
+
+PARAMETERS PYTHON
+
+1) arduinobot_ws/src/arduinobot_py_examples/arduinobot_py_examples altında simple_parameter.py adında dosya oluşturuldu.
+
+2) setup.py dosyasında console scripts bloğunun içine aşağıdaki saatır eklendi:
+	
+	'simple_parameter = arduinobot_py_examples.simple_parameter:main',
+
+3) package.xöl dosyasında aşağıdaki satır eklendi
+
+<exec_depend>rcl_interfaces</exec_depend>
+
+PARAMETERS CPP
+
+1) arduinobot_ws/src/arduinobot_cpp_examples/ altında simple_paramter.cpp dosyası oluşturuldu
+
+2) CMakeList.txt dosyasında aşağıdaki satırlar eklendi:
+
+	find_package(rcl_interfaces REQUIRED)
+	
+	add_executable(simple_parameter src/simple_parameter.cpp)
+	ament_target_dependencies(simple_parameter rclcpp rcl_interfaces)
+	
+	install() satırları arasına 
+	
+	simple_parameter satırı eklendi
+	
+3) package.xml dosyasında aşağıdaki satırlar eklendi:
+
+	<depend>rcl_interfaces</depend>
+	
+ROS2 Parameter CLI
+
+1) Bir terminalde
+	ros2 run arduinobot_cpp_examples simple_parameter ile node çalıştırılır
+
+2) Diğer bir terminalde 
+	ros2 param list komutu ile aşağıdaki parametreler görünür:
+	
+	/simple_parameter:
+	  qos_overrides./parameter_events.publisher.depth
+	  qos_overrides./parameter_events.publisher.durability
+	  qos_overrides./parameter_events.publisher.history
+	  qos_overrides./parameter_events.publisher.reliability
+	  simple_int_param
+	  simple_string_param
+	  use_sim_time
+	 
+3) ros2 param get /simple_parameter simple_int_param komutu ile integer parametrenin default değeri öğrenilir:
+
+	Integer value is: 28
+	
+4) simple parameter nodeu çalıştırılırken parametrelere atam yapılabilir:
+
+	ros2 run arduinobot_cpp_examples simple_parameter --ros-args -p simple_int_param:=30
+
+   parametrenin değiştiği aşağıdaki görünebilir:
+   
+   	ros2 param get /simple_parameter simple_int_param
+   	
+   	Integer value is: 30
+   	
+5) Bir terminalde
+	ros2 run arduinobot_cpp_examples simple_parameter ile node çalıştırılır
+	
+6) Diğer terminalde string parametre şöyle değiştirilebilir:
+	ros2 param set /simple_parameter simple_string_param "Hi ros2"
+	
+   1. terminalde değişikliğin olduğuna dair mesaj görünür.
+   
+Robot visualizing in RVIZ2
+
+1) ik terminalde:
+	ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/monster/arduinobot_ws/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
+
+2) ikinci terminalde:
+	ros2 run joint_state_publisher_gui joint_state_publisher_gui
+	
+3) ucuncu terminalde:
+	ros2 run rviz2 rviz2
+	
+4) .rviz şeklinde kaydetmek için arduinobot_ws/src/arduinobot_description/ altında rviz klasörü oluşturulur. Daha sonra rviz de save as config ile rviz klasoru içine display.rviz adıyla kaydedilir.
+   	
+Visualize the Robot with Launch Files
+
+1) Bir öncwki uygulamada robotu visulaize etmek için 3 ayrı terminalde 3 komut çalıştırmıştık. launch file ise bunu tek bir dosya ile yapabilmektedir.
+
+2) arduinobot_ws/src/arduinobot_description içinde launch adında klasör oluşturuldu.
+
+3) arduinobot_ws/src/arduinobot_description/launch içinde display.launch.py dosyası oluşruldu.
+
+4) CMakeList.txt dosyasında 
+
+	install(
+		DIRECTORY urdf den sonra launch rviz eklenir. Son hali:
+	)
+	
+	install(
+		DIRECTORY urdf launch rviz
+	)
+
+5) package.xml dosyasında aşağıdaki satırlar eklenir:
+
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+  
+6) colcon build 
+
+7) ros2 launch arduinobot_description display.launch.py komutu ile rviz2 de robot ve publisher ucu birden çalıştırılır
+
+ROS2 İÇİN EK DOSYALARIN İNDİRİLMESİ
+
+1) Urdf tutorial paketin indirilmesi:
+
+sudo apt-get install ros-humble-urdf-tutorial
+
+Bu sayede rvizde yalnızca urdf, sdf veya xacro dosyalar çalıştırılabilir:
+
+ros2 launch urdf_tutorial display.launch.py model:=/home/monster/Desktop/building_robot.xacro
+
+
+2) joint_state_publisher ve joint_state_publisher_gui paketleri de indirilmemiş oluyor bu nedenle manuel kurulmalıdırlar.
+
+sudo apt update
+sudo apt install ros-humble-joint-state-publisher
+
+

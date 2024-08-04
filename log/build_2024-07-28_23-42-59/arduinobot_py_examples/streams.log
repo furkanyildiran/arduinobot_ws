@@ -1,0 +1,23 @@
+[0.846s] Invoking command in '/home/monster/arduinobot_ws/src/arduinobot_py_examples': PYTHONPATH=/home/monster/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/monster/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/monster/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
+[1.088s] running egg_info
+[1.089s] writing ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/PKG-INFO
+[1.090s] writing dependency_links to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/dependency_links.txt
+[1.090s] writing entry points to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/entry_points.txt
+[1.091s] writing requirements to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/requires.txt
+[1.091s] writing top-level names to ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/top_level.txt
+[1.092s] reading manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.093s] writing manifest file '../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[1.094s] running build
+[1.094s] running build_py
+[1.094s] running install
+[1.094s] running install_lib
+[1.095s] running install_data
+[1.096s] running install_egg_info
+[1.097s] removing '/home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+[1.097s] Copying ../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info to /home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples-0.0.0-py3.10.egg-info
+[1.098s] running install_scripts
+[1.123s] Installing simple_parameter script to /home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.123s] Installing simple_publisher script to /home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.123s] Installing simple_subscriber script to /home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[1.123s] writing list of installed files to '/home/monster/arduinobot_ws/build/arduinobot_py_examples/install.log'
+[1.151s] Invoked command in '/home/monster/arduinobot_ws/src/arduinobot_py_examples' returned '0': PYTHONPATH=/home/monster/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monster/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arduinobot_py_examples build --build-base /home/monster/arduinobot_ws/build/arduinobot_py_examples/build install --record /home/monster/arduinobot_ws/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
