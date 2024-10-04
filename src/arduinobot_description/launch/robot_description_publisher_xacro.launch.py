@@ -27,9 +27,10 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             name='robot_state_publisher',
-            output='screen',
+     #        output='screen',
+	    output='both',  #sil
             parameters=[robot_desc],
-            arguments=[])
+            )
 
     # Gazebo Sim
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
@@ -55,16 +56,34 @@ def generate_launch_description():
         package="ros_gz_sim",
         executable="create",
         arguments=[
-                    '-name', 'my_custom_model',
+                    '-name', 'rrbot',
                     '-x', '1.2',
                     '-z', '2.3',
-                    '-Y', '3.4',
-                    '-topic', '/robot_description'],
+                    '-y', '3.4',
+                    '-topic', 'robot_description'],
                  output='screen')
-
+                 
+    # Gz - ROS Bridge
+    bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            # Clock (IGN -> ROS2)
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+            # Joint states (IGN -> ROS2)
+            '/world/empty/model/rrbot/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model',
+        ],
+        remappings=[
+            ('/world/empty/model/rrbot/joint_state', 'joint_states'),
+        ],
+        output='screen'
+    )
+    
     return LaunchDescription([
         gazebo,
+        spawn,
+        bridge,
         robot_state_publisher,
         rviz,
-        spawn
+  
     ])

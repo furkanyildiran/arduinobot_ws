@@ -1,0 +1,1 @@
+Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_cpp_examples -- -j6 -l6

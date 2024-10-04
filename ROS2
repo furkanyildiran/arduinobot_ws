@@ -236,4 +236,10 @@ ros2 launch urdf_tutorial display.launch.py model:=/home/monster/Desktop/buildin
 sudo apt update
 sudo apt install ros-humble-joint-state-publisher
 
+Robot Gazebo Spawn(Rrbot)
 
+1) Bir terminalde ros2 launch arduinobot_description robot_description_publisher_xacro.launch.py komutu ile launch dosyası çalıştırılır. Sorunsuz bir şekilde hem rviz de ham de gazebo da robotun spawn olduğu görülür. Launch dosyası incelenerek nasıl çalıştığı incelenmelidir.
+
+DiffDrive Gazebo
+
+1)

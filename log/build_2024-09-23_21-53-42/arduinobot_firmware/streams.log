@@ -1,0 +1,45 @@
+[0.027s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j6 -l6
+[0.134s] [  0%] Built target ament_cmake_python_copy_arduinobot_firmware
+[0.178s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o[0m
+[0.476s] running egg_info
+[0.477s] writing arduinobot_firmware.egg-info/PKG-INFO
+[0.478s] writing dependency_links to arduinobot_firmware.egg-info/dependency_links.txt
+[0.479s] writing top-level names to arduinobot_firmware.egg-info/top_level.txt
+[0.484s] reading manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.485s] writing manifest file 'arduinobot_firmware.egg-info/SOURCES.txt'
+[0.540s] [ 50%] Built target ament_cmake_python_build_arduinobot_firmware_egg
+[10.696s] [100%] [32m[1mLinking CXX executable simple_serial_transmitter[0m
+[11.115s] [100%] Built target simple_serial_transmitter
+[11.128s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/monster/arduinobot_ws/build/arduinobot_firmware -- -j6 -l6
+[11.154s] Invoking command in '/home/monster/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_firmware
+[11.161s] -- Install configuration: ""
+[11.162s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.sh
+[11.162s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/pythonpath.dsv
+[11.162s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info
+[11.163s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/PKG-INFO
+[11.163s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/dependency_links.txt
+[11.163s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/SOURCES.txt
+[11.163s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware-0.0.0-py3.10.egg-info/top_level.txt
+[11.163s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware
+[11.164s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/__init__.py
+[11.164s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware/simple_serial_transmitter.py
+[11.191s] Listing '/home/monster/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages/arduinobot_firmware'...
+[11.198s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter
+[11.200s] -- Set runtime path of "/home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter" to ""
+[11.200s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/lib/arduinobot_firmware/simple_serial_transmitter.py
+[11.201s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/package_run_dependencies/arduinobot_firmware
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/parent_prefix_path/arduinobot_firmware
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.sh
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/ament_prefix_path.dsv
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.sh
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/environment/path.dsv
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.bash
+[11.202s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.sh
+[11.203s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.zsh
+[11.203s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/local_setup.dsv
+[11.203s] -- Installing: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.dsv
+[11.203s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/ament_index/resource_index/packages/arduinobot_firmware
+[11.203s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig.cmake
+[11.204s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/cmake/arduinobot_firmwareConfig-version.cmake
+[11.204s] -- Up-to-date: /home/monster/arduinobot_ws/install/arduinobot_firmware/share/arduinobot_firmware/package.xml
+[11.206s] Invoked command in '/home/monster/arduinobot_ws/build/arduinobot_firmware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/monster/arduinobot_ws/build/arduinobot_firmware
