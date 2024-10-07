@@ -1,0 +1,324 @@
+Build the Robot - Publisher Node with Arduino
+
+1) arduinobot_ws/src altına gidilerek arduinobot_firmware adında paket oluşturulur:
+
+ros2 pkg create --build-type ament_cmake arduinobot_firmware
+
+2) colcon build ile paketler build edilir.
+
+3) Arduino için basit bir program yazılır:
+
+void setup() {
+
+	pinMode(13, 1);
+	digitalWrite(13,0);
+	Serial.begin(115200);
+	Serial.setTimeout(1);
+}
+
+void loop(){
+
+	if (Serial.available())
+	{
+   		int x = Serial.readString().toInt();
+   		if(x==0)
+			digitalWrite(13,0);
+   		else 
+        		digitalWrite(13,1);
+
+	}
+	delay(0.1)
+}
+
+4) arduinobot_ws/src/arduinobot_firmware altında arduinobot_firmware adında bit klasör oluşturulur.
+
+5) arduinobot_ws/src/arduinobot_firmware/arduinobot_firmware altında __init__.py ve 
+simple_serial_transmitter.py dosyası oluşturulur.
+
+↓arduinobot_ws
+ ↓src
+  ↓arduinobot_firmware
+   ↓arduinobot_firmware
+	__init__.py
+        simple_serial_transmitter.py
+   ↓firmware
+        simple_serial_receiver.ino
+   →include
+   →src
+   CMakeLists.txt
+   package.xml
+
+6) simple_serial_transmitter.py dosyasının içeriği:
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+import serial
+
+class SimpleSerialTransmitter(Node):
+	def __init__(self):
+		super().__init__("simple_serial_transmitter")
+
+		self.declare_parameter("port", "/dev/ttyACM0")
+		self.declare_parameter("baud_rate",115200)
+
+		self.port_ = self.get_parameter("port").value
+		self.baud_rate_ = self.get_parameter("baud_rate").value
+		
+		self.sub_ = self.create_subscription(String, "serial_transmitter", self.msgCallback,10)
+		self.arduino_ = serial.Serial(port=self.port_, baudrate=self.baud_rate_, timeout=0.1)
+
+	def msgCallback(self, msg):
+		self.get_logger().info("New message received, publishing on serial: %s" % self.arduino_.name)
+		self.arduino_.write(msg.data.encode("utf-8"))
+
+def main():
+	rclpy.init()
+	simple_serial_transmitter = SimpleSerialTransmitter()
+	rclpy.spin(simple_serial_transmitter)
+	simple_serial_transmitter.destroy_node()
+	rclpy.shutdown()
+
+if __name__ == '__main__':
+	main()
+
+7) CMakeLists.txt içeriği:
+
+cmake_minimum_required(VERSION 3.8)
+project(arduinobot_firmware)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(SERIAL libserial)
+
+ament_python_install_package(${PROJECT_NAME})
+
+add_executable(simple_serial_transmitter src/simple_serial_transmitter.cpp)
+ament_target_dependencies(simple_serial_transmitter rclcpp std_msgs)
+target_include_directories(simple_serial_transmitter PUBLIC "${SERIAL_INCLUDE_DIRS}")
+target_link_libraries(simple_serial_transmitter "${SERIAL_LDFLAGS}")
+
+
+install(TARGETS
+  simple_serial_transmitter
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
+install(PROGRAMS
+  ${PROJECT_NAME}/simple_serial_transmitter.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_packages()
+
+8) package.xml içeriği:
+
+<package format="3">
+  <name>arduinobot_firmware</name>
+  <version>0.0.0</version>
+  <description>TODO:</description>
+  <maintainer email="">alien</maintainer>
+  <license>Todo:</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>libserial-dev</depend>
+  <exec_depend>python3-serial</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
+
+9) colcon build ile test edilebilir.
+
+10) src altına simple_serial_transmitter.cpp dosyası oluşturulur: 
+
+↓arduinobot_ws
+ ↓src
+  ↓arduinobot_firmware
+   →arduinobot_firmware
+   →firmware
+   →include
+   ↓src
+	simple_serial_transmitter.cpp       
+   CMakeLists.txt
+   package.xml
+
+11) simple_serial_transmitter.cpp dosyasının içeriği:
+
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <libserial/SerialPort.h>
+
+using std::placeholders::_1;
+
+class SimpleSerialTransmitter : public rclcpp::Node
+{
+public:
+	SimpleSerialTransmitter() : Node("simple_serial_transmitter")
+	{
+	   declare_parameter<std::string>("port", "/dev/ttyACM0");
+	   std::string port_ = get_parameter("port").as_string();
+	   
+	   sub_ = create_subscription<std_msgs::msg::String>("serial_transmitter",10, std::bind(&SimpleSerialTransmitter::msgCallback, this, _1));
+		
+	   arduino_.Open(port_);
+	   arduino_.SetBaudRate(LibSerial::Baudrate::BAUD_115200);
+	}
+
+	~SimpleSerialTransmitter()
+  	{
+	   arduino_.Close();
+	}
+
+	void msgCallback(const std_msgs::msg::String &msg)
+	{
+	   RCLCPP_INFO_STREAM(get_logger(), "New message received, publishing on serial port:" << msg.data);
+	   arduino_.Write(msg.data);
+	}
+
+private:
+   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
+   LibSerial::SerialPort arduino_;
+};
+
+int main(int argc, char * argv[])
+{
+   rclcpp::init(argc, argv);
+   auto node = std::make_shared<SimpleSerialTransmitter>();
+   rclcpp::spin(node);
+   rclcpp::shutdown();
+   return 0;
+}
+
+12) Aşağıdakki şekilde test edilebilir:
+
+ros2 run arduinobot_firmware simple_serial_transmitter --ros-args -p port:=/dev/ttyACM0
+
+Başka bir terminalde ros2 topic list ile mevcut topicler görüntülenebilir:
+
+ros2 topic list 
+/parameter_events
+/rosout
+/serial_transmitter
+
+Led yakmak için:
+
+ros2 topic pub /serial_transmitter std_msgs/msg/String "data: '1'"
+
+Led söndürmek için:
+
+ros2 topic pub /serial_transmitter std_msgs/msg/String "data: '0'"
+
+
+Build the Robot - Subscriber Node with Arduino
+
+1)Arduino için:
+
+int x=0;
+
+void setup(){
+  Serial.begin(115200);
+  Serial.setTimeout(1);
+}
+
+void loop(){
+  Serial.println(x);
+  x++;
+  delay(0.1);
+}
+
+arduinobot_ws/src/arduinobot_firmware/arduinobot_firmware/firmware altına simple_serial_receiver.ino olarak kaydedilir.
+
+2) Aşağıdaki gibi simple_serial_receiver.py dosyası oluşturulur.
+
+↓arduinobot_ws
+ ↓src
+  ↓arduinobot_firmware
+   →arduinobot_firmware
+   ↓firmware
+	simple_serial_receiver.py
+   →include
+   →src
+   CMakeLists.txt
+   package.xml
+
+3) simple_serial_receiver.py dosyasının içeriği:
+
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Node
+import serial
+
+class SimpleSerialReceiver(Node):
+	def __init__(self):
+		super().__init__("simple_serial_receiver")
+		self.declare_parameter("port", "/dev/ttyACM0")
+		self.declare_parameter("baud_rate", 115200)
+		self.port_ = self.get_parameter("port").value
+		self.baud_rate_ = self.get_parameter("baud_rate").value
+		self.pub_ = self.create_publisher(String, "serial_receiver", 10)
+		self.frequency_ = 0.01
+		self.arduino_ = serial.Serial(port=self.port_, baudrate=self.baud_rate_, timeout=0.1)
+		self.timer_ = self.create_timer(self.frequency_, self.timerCallback)
+
+	def timerCallback(self):
+		if rclpy.ok() and self.arduino_.is_open:
+			data = self.arduino_.readline()
+			try:
+				data.encode("utf-8")
+			except:
+				return
+
+			msg = String()
+			msg.data = str(data)
+			self.pub_.publish(msg)
+
+def main():
+	rclpy.init()
+	simple_serial_receiver = SimpleSerialReceiver()
+	rclpy.spin(simple_serial_receiver)
+	simple_serial_receiver.destroy_node()
+	rclpy.shutdown()
+
+if __name__ == '__main__':
+	main()
+
+4) CMakeList.txt dosysına eklenen satırlar:
+
+install(PROGRAMS
+	${PROJECT_NAME}/simple_serial_transmitter.py
+	${PROJECT_NAME}/simple_serial_receiver.py   *
+	DESTIANTION lib/${PROJECT_NAME}
+)
+
+87 bitti
