@@ -9,7 +9,6 @@ ros2 pkg create --build-type ament_cmake arduinobot_firmware
 3) Arduino için basit bir program yazılır:
 
 void setup() {
-
 	pinMode(13, 1);
 	digitalWrite(13,0);
 	Serial.begin(115200);
