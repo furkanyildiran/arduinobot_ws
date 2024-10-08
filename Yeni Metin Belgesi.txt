@@ -90,16 +90,16 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-find_package(ament_cmake REQUIRED)
-find_package(ament_cmake_python REQUIRED)
-find_package(rclpy REQUIRED)
+find_package(ament_cmake REQUIRED)		#default
+find_package(ament_cmake_python REQUIRED)  	#python
+find_package(rclpy REQUIRED)			#python
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(SERIAL libserial)
 
-ament_python_install_package(${PROJECT_NAME})
+ament_python_install_package(${PROJECT_NAME})	#python
 
 add_executable(simple_serial_transmitter src/simple_serial_transmitter.cpp)
 ament_target_dependencies(simple_serial_transmitter rclcpp std_msgs)
@@ -116,17 +116,17 @@ install(TARGETS
 )
 
 
-install(PROGRAMS
-  ${PROJECT_NAME}/simple_serial_transmitter.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+install(PROGRAMS				#python
+  ${PROJECT_NAME}/simple_serial_transmitter.py	#python
+  DESTINATION lib/${PROJECT_NAME}		#python
+)						#python
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  set(ament_cmake_copyright_FOUND TRUE)
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+if(BUILD_TESTING)				#default
+  find_package(ament_lint_auto REQUIRED)	#default
+  set(ament_cmake_copyright_FOUND TRUE)		#default
+  set(ament_cmake_cpplint_FOUND TRUE)		#default
+  ament_lint_auto_find_test_dependencies()	#default
+endif()						#default
 
 ament_packages()
 
@@ -139,21 +139,21 @@ ament_packages()
   <maintainer email="">alien</maintainer>
   <license>Todo:</license>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
-  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>		#default
+  <buildtool_depend>ament_cmake_python</buildtool_depend>	#python
 
-  <depend>rclpy</depend>
+  <depend>rclpy</depend>					#python
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>libserial-dev</depend>
-  <exec_depend>python3-serial</exec_depend>
+  <exec_depend>python3-serial</exec_depend>	 		#python
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_lint_auto</test_depend>			#default
+  <test_depend>ament_lint_common</test_depend>			#default
 
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
+  <export>							#default
+    <build_type>ament_cmake</build_type>			#default
+  </export>							#default
 
 </package>
 
