@@ -49,6 +49,7 @@ simple_serial_transmitter.py dosyası oluşturulur.
 
 6) simple_serial_transmitter.py dosyasının içeriği:
 
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -58,7 +59,7 @@ class SimpleSerialTransmitter(Node):
 	def __init__(self):
 		super().__init__("simple_serial_transmitter")
 
-		self.declare_parameter("port", "/dev/ttyACM0")
+		self.declare_parameter("port", "/dev/virtualcom0")
 		self.declare_parameter("baud_rate",115200)
 
 		self.port_ = self.get_parameter("port").value
@@ -221,7 +222,11 @@ int main(int argc, char * argv[])
 
 12) Aşağıdakki şekilde test edilebilir:
 
-ros2 run arduinobot_firmware simple_serial_transmitter --ros-args -p port:=/dev/ttyACM0
+cpp:
+ros2 run arduinobot_firmware simple_serial_transmitter --ros-args -p port:=/dev/virtualcom0
+
+python:
+ros2 run arduinobot_firmware simple_serial_transmitter.py --ros-args -p port:=/dev/virtualcom0
 
 Başka bir terminalde ros2 topic list ile mevcut topicler görüntülenebilir:
 
@@ -232,7 +237,7 @@ ros2 topic list
 
 Led yakmak için:
 
-ros2 topic pub /serial_transmitter std_msgs/msg/String "data: '1'"
+ros2 topic pub --once /serial_transmitter std_msgs/msg/String "data: '1'"
 
 Led söndürmek için:
 
@@ -316,7 +321,7 @@ if __name__ == '__main__':
 
 install(PROGRAMS
 	${PROJECT_NAME}/simple_serial_transmitter.py
-	${PROJECT_NAME}/simple_serial_receiver.py   *
+	${PROJECT_NAME}/simple_serial_receiver.py
 	DESTIANTION lib/${PROJECT_NAME}
 )
 
